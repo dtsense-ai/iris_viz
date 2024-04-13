@@ -12,7 +12,7 @@ st.title('Visualisasi Sederhana dengan Iris')
 st.write("")
 col1, col2 = st.columns([2,6])
 
-with col1:
+with st.sidebar:
 	st.markdown("**Pilih Spesies**")
 	setosa_on = st.checkbox('Iris Setosa')
 	versicolor_on = st.checkbox('Iris Versicolor')
@@ -33,8 +33,8 @@ if toggle_list:
 else:
 	used_data = data
 
-with col2:
-	st.dataframe(used_data, use_container_width=True)
+# with col2:
+st.dataframe(used_data, use_container_width=True)
 
 col3, col4 = st.columns(2)
 
