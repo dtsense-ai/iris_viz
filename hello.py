@@ -1,3 +1,8 @@
+# python -m venv env --> bikin environment
+# env\Scripts\activate --> aktivasi environment
+# pip install streamlit --> install streamlit
+# streamlit run namafile.py --> running
+
 import pandas as pd
 import streamlit as st
 import plotly.express as px
